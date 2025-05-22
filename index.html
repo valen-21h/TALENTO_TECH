@@ -73,7 +73,28 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 1);
         }
 
+        label{
+             display: block;     
+             margin: 10px 0 5px ;                                                                                                                   
+        }
 
+        input, textarea, select{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"]{
+            background-color: rgb(94, 95, 151);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover{
+            background-color: #9b9999;
+        }
         
     </style>
 
@@ -131,7 +152,36 @@
                 </tr>
             </tbody>
         </table>
-    </section><hr>
+    </section>
+    <hr>
+    <section id="contacto">
+            <h2>Seccion de contacto</h2>
+        <div class="container">
+            <h1>Formulario de Contacto</h1>
+            <form action="#" method="post">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" required>
+
+                <label for="email">Correo electronico:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="telefono">Telefono: </label>
+                <input type="tel" name="telefono" id="telefono">
+
+                <label for="mensaje">Mensaje: </label>
+                <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+
+                <label for="pais">Pais:</label>
+                <select name="pais" id="pais" required>
+                    <option value="co">Colombia</option>
+                    <option value="ni">Nicaragua</option>
+                </select>
+
+                <input type="submit" value="Enviar">
+                </form>
+        </div>
+        <hr>
+    </section>
 
 </body>
 </html>
